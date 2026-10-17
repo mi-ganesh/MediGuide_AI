@@ -143,6 +143,18 @@ Open the local URL displayed in the terminal by Vite.
 4. The application may ask follow-up questions to collect additional symptom information.
 5. The results and relevant disease information are returned to the frontend for display.
 
+## 📸 Screenshots
+
+### 🏠 MediGuide AI Homepage
+![MediGuide AI Homepage](screenshots/mediguide-homepage.png)
+
+### 🩺 Symptom Assessment
+![MediGuide AI Symptom Assessment](screenshots/mediguide-symptom-check.png)
+
+### 📊 Prediction Results
+![MediGuide AI Prediction Results](screenshots/mediguide-prediction-results.png)
+
+
 ## Machine Learning Model
 
 The project uses a trained classification model to map symptom inputs to possible disease categories. The saved model is loaded by the backend to generate predictions.
