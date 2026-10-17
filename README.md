@@ -146,13 +146,13 @@ Open the local URL displayed in the terminal by Vite.
 ## 📸 Screenshots
 
 ### 🏠 MediGuide AI Homepage
-![MediGuide AI Homepage](screenshots/mediguide-homepage.png)
+![MediGuide AI Homepage](Screenshots/mediguide-homepage.png)
 
 ### 🩺 Symptom Assessment
-![MediGuide AI Symptom Assessment](screenshots/mediguide-symptom-check.png)
+![MediGuide AI Symptom Assessment](Screenshots/mediguide-symptom-check.png)
 
 ### 📊 Prediction Results
-![MediGuide AI Prediction Results](screenshots/mediguide-prediction-results.png)
+![MediGuide AI Prediction Results](Screenshots/mediguide-prediction-results.png)
 
 
 ## Machine Learning Model
