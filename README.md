@@ -1,52 +1,189 @@
-# MediGuide: adaptive disease prediction website (React + Flask)
+# Disease Predictor Using Machine Learning
 
-```
+## Overview
+
+Disease Predictor is a machine learning-based web application that predicts possible diseases based on user-reported symptoms. It combines a Python backend with a React frontend to provide an interactive symptom assessment experience.
+
+The application uses a trained machine learning model to generate possible disease predictions and an adaptive questioning approach to gather additional symptom information.
+
+**Note:** This project is intended for educational and research purposes. Predictions are preliminary and should not be considered a medical diagnosis.
+
+## Features
+
+- **Symptom Selection:** Select symptoms through an interactive user interface.
+- **Disease Prediction:** Generate possible disease predictions using a trained machine learning model.
+- **Adaptive Questioning:** Ask follow-up questions to gather more relevant symptom information.
+- **Prediction Results:** Display possible conditions and model prediction information.
+- **Disease Information:** Provide additional information about predicted conditions.
+- **REST API:** Connect the React frontend to the Python backend.
+
+## Technology Stack
+
+### Frontend
+- React.js
+- Vite
+- JavaScript
+- CSS
+
+### Backend
+- Python
+- Flask or the framework configured in `backend/app.py`
+- REST API
+
+### Machine Learning
+- Scikit-learn
+- Pandas
+- NumPy
+- Joblib
+- Trained classification model
+
+### Data Storage
+- CSV dataset for disease and symptom information
+- JSON file for additional disease information
+
+## Project Structure
+
+```text
 disease-predictor/
 ├── backend/
-│   ├── data/                  <- put Diseases_and_Symptoms_dataset.csv here
-│   ├── model/                 <- model.joblib + metrics.json are created here
-│   ├── engine.py              shared model code (blending, calibration, next-question logic)
-│   ├── train_model.py         advanced training script (replaces the notebook training)
-│   ├── app.py                 API: /api/health, /api/symptoms, /api/assess
-│   ├── disease_info.json      descriptions/precautions (add more diseases here)
-│   └── requirements.txt
-└── frontend/                  React (Vite) website
+│   ├── app.py
+│   ├── engine.py
+│   ├── train_model.py
+│   ├── requirements.txt
+│   ├── disease_info.json
+│   ├── disease_info.template.json
+│   ├── data/
+│   │   └── Diseases_and_Symptoms_dataset.csv
+│   └── model/
+│       ├── model.joblib
+│       └── metrics.json
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── App.jsx
+│   │   ├── api.js
+│   │   ├── main.jsx
+│   │   └── styles.css
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
+├── .gitignore
+└── README.md
 ```
 
-## 1. Train the model (once)
+## Getting Started
+
+### Prerequisites
+
+Install the following before running the project:
+
+- Python 3.10 or a version compatible with the backend dependencies
+- Node.js and npm
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+cd disease-predictor
 ```
-cd backend
-pip install -r requirements.txt
-# copy Diseases_and_Symptoms_dataset.csv into backend/data/
-python train_model.py --fast     # 1-2 min sanity check
-python train_model.py            # full training (about 10-25 min)
-python train_model.py --search   # also compares several configs (slowest, best)
+
+Replace the repository URL with your actual GitHub repository URL.
+
+### 2. Set Up the Backend
+
+Open a terminal in the project root.
+
+Create and activate a Python virtual environment:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 ```
-It prints accuracy for 1, 2, 3 and 5 given symptoms and saves `model/metrics.json`.
 
-## 2. Run the site (two terminals)
+Install backend dependencies:
+
+```bash
+pip install -r backend/requirements.txt
 ```
-cd backend  && python app.py      # http://127.0.0.1:5000
-cd frontend && npm install && npm run dev    # http://localhost:5173
+
+Ensure the dataset and trained model are available at the paths expected by the backend. If the model has not been trained, follow the instructions in `backend/train_model.py` to generate it.
+
+Start the backend using the command appropriate for the framework configured in `backend/app.py`. For example, if the application uses Flask:
+
+```bash
+python backend/app.py
 ```
 
-## How it works
-1. The user adds starting symptoms.
-2. `POST /api/assess` returns the top 3 conditions and the **next best question**
-   (the symptom with the highest expected information gain).
-3. The user answers Yes / No / Not sure; the page calls `/api/assess` again.
-4. It stops when confidence reaches 80%, after 7 questions, or when no question helps.
+### 3. Set Up the Frontend
 
-Change the limits in `backend/app.py` (`CONFIDENCE_THRESHOLD`, `MAX_QUESTIONS` env vars)
-and `MAX_QUESTIONS` at the top of `frontend/src/App.jsx`.
+Open another terminal:
 
-## Add disease descriptions
-Training writes `backend/disease_info.template.json` listing all diseases. Copy entries you
-fill in (description, precautions, specialist) into `disease_info.json`. Missing ones fall back
-to generic advice. Always have a doctor review medical text before publishing.
+```bash
+cd frontend
+npm install
+```
 
-## Production
-- Frontend: set `VITE_API_URL=https://your-api`, run `npm run build`, host `dist/`.
-- Backend: `pip install gunicorn && gunicorn app:app`, set `CORS_ORIGINS=https://your-site`.
+If environment variables are required, copy `.env.example` to `.env` and configure the appropriate backend API URL. Never commit your actual `.env` file or secret credentials.
 
-Not a medical device. Results are not a diagnosis.
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in the terminal by Vite.
+
+## How It Works
+
+1. The user selects or reports symptoms.
+2. The frontend sends the symptom information to the backend.
+3. The backend processes the input and uses the trained model to predict possible conditions.
+4. The application may ask follow-up questions to collect additional symptom information.
+5. The results and relevant disease information are returned to the frontend for display.
+
+## Machine Learning Model
+
+The project uses a trained classification model to map symptom inputs to possible disease categories. The saved model is loaded by the backend to generate predictions.
+
+The `backend/model/metrics.json` file can contain model evaluation results, such as accuracy, precision, recall, and F1-score.
+
+Evaluation metrics describe performance on the evaluated dataset; they do not establish clinical accuracy or reliability.
+
+## Dataset
+
+The dataset contains disease labels and corresponding symptom features. The backend uses these features to prepare symptom inputs for prediction.
+
+If the dataset is not included in the repository, obtain it from an authorized source and place it at the path expected by the backend.
+
+Review the dataset license and redistribution conditions before publishing it.
+
+## Limitations
+
+- Predictions depend on the quality and coverage of the training dataset.
+- Some diseases have overlapping symptoms.
+- Model confidence scores are not necessarily calibrated probabilities of having a disease.
+- The application is not a substitute for a qualified healthcare professional.
+- Real-world clinical validation is required before any medical use.
+
+## Future Improvements
+
+- Expand and validate the training dataset.
+- Improve model evaluation and probability calibration.
+- Add multilingual symptom input.
+- Improve accessibility and mobile responsiveness.
+- Integrate location-based healthcare recommendations.
+- Add automated testing and deployment.
+
+## Contributing
+
+Contributions, suggestions, and bug reports are welcome. Please create an issue or submit a pull request describing the proposed change.
+
+## License
+
+No license has been specified yet. Add an appropriate license file before permitting others to reuse or redistribute this project.
+
+## Disclaimer
+
+This project is developed for educational and research purposes only. It does not provide professional medical advice, diagnosis, or treatment recommendations. Consult a qualified healthcare professional for medical concerns. Seek urgent medical care for emergency symptoms.
