@@ -1,0 +1,47 @@
+{
+  "rows": [
+    {
+      "input": "1 symptom given",
+      "top1": 0.21011551670309087,
+      "top3": 0.48314080549484856
+    },
+    {
+      "input": "2 symptoms given",
+      "top1": 0.4924549901134353,
+      "top3": 0.8020085336663545
+    },
+    {
+      "input": "3 symptoms given",
+      "top1": 0.6846706212925382,
+      "top3": 0.9233531064626912
+    },
+    {
+      "input": "5 symptoms given",
+      "top1": 0.8506608387969612,
+      "top3": 0.9775210739931315
+    },
+    {
+      "input": "all symptoms known",
+      "top1": 0.8940576542824435,
+      "top3": 0.9840253928608597
+    }
+  ],
+  "macro_f1_full": 0.8947812756188125,
+  "rf_weight": 0.0,
+  "temperature": 1.25,
+  "rf_config": {
+    "n_estimators": 120,
+    "min_samples_leaf": 3,
+    "max_leaf_nodes": 2000
+  },
+  "mlp_config": {
+    "hidden_layer_sizes": [
+      512,
+      256
+    ],
+    "alpha": 0.0001,
+    "max_iter": 40
+  },
+  "train_minutes": 5.6,
+  "model_mb": 4.4
+}

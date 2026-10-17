@@ -1,0 +1,502 @@
+{
+  "actinic keratosis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "acute bronchiolitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "acute bronchitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "acute bronchospasm": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "acute kidney injury": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "acute pancreatitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "acute sinusitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "allergy": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "angina": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "anxiety": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "appendicitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "arthritis of the hip": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "asthma": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "benign prostatic hyperplasia (bph)": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "brachial neuritis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "bursitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "carpal tunnel syndrome": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "cholecystitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "chronic back pain": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "chronic constipation": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "chronic obstructive pulmonary disease (copd)": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "common cold": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "complex regional pain syndrome": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "concussion": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "conjunctivitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "conjunctivitis due to allergy": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "contact dermatitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "cornea infection": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "croup": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "cystitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "degenerative disc disease": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "dental caries": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "depression": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "developmental disability": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "diaper rash": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "diverticulitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "drug reaction": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "ear drum damage": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "eczema": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "esophagitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "eustachian tube dysfunction (ear disorder)": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "fungal infection of the hair": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "gallstone": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "gastrointestinal hemorrhage": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "gout": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "gum disease": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "heart attack": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "heart failure": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "hemorrhoids": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "herniated disk": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "hiatal hernia": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "hyperemesis gravidarum": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "hypertensive heart disease": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "hypoglycemia": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "idiopathic excessive menstruation": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "idiopathic irregular menstrual cycle": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "idiopathic painful menstruation": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "infectious gastroenteritis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "injury to the arm": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "injury to the leg": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "injury to the trunk": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "liver disease": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "macular degeneration": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "marijuana abuse": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "multiple sclerosis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "noninfectious gastroenteritis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "nose disorder": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "obstructive sleep apnea (osa)": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "otitis externa (swimmer's ear)": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "otitis media": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "pain after an operation": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "panic disorder": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "pelvic inflammatory disease": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "peripheral nerve disorder": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "personality disorder": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "pneumonia": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "problem during pregnancy": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "psoriasis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "pyogenic skin infection": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "rectal disorder": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "schizophrenia": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "seasonal allergies (hay fever)": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "sebaceous cyst": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "sepsis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "sickle cell crisis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "sinus bradycardia": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "skin pigmentation disorder": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "skin polyp": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "spinal stenosis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "spondylosis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "spontaneous abortion": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "sprain or strain": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "strep throat": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "stye": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "temporary or benign blood in urine": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "threatened pregnancy": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "urinary tract infection": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "vaginal cyst": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "vaginitis": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  },
+  "vulvodynia": {
+    "description": "",
+    "precautions": [],
+    "specialist": ""
+  }
+}
