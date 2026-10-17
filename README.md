@@ -1,8 +1,8 @@
-# Disease Predictor Using Machine Learning
+# MediGuide AI — AI-Powered Healthcare Assistance Platform
 
 ## Overview
 
-Disease Predictor is a machine learning-based web application that predicts possible diseases based on user-reported symptoms. It combines a Python backend with a React frontend to provide an interactive symptom assessment experience.
+MediGuide AI — AI-Powered Healthcare Assistance Platform is a machine learning-based web application that predicts possible diseases based on user-reported symptoms. It combines a Python backend with a React frontend to provide an interactive symptom assessment experience.
 
 The application uses a trained machine learning model to generate possible disease predictions and an adaptive questioning approach to gather additional symptom information.
 
